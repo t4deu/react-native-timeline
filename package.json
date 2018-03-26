@@ -1,0 +1,64 @@
+
+{
+  "name": "react-native-timeline",
+  "version": "0.0.1",
+  "description": "Timeline flexible and performance aware component for React Native",
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "format": "prettier --write \"{{packages,scripts,src,storybook}/**/*,*}.{ts,tsx,js,jsx,json,md}\"",
+    "lint": "eslint src/** tests/**",
+    "lintfix": "eslint --fix src/** tests/**",
+    "flow": "flow",
+    "precommit": "yarn test",
+    "prepush": "yarn test",
+    "storybook": "storybook start -p 7007",
+    "devtools": "react-devtools",
+    "build": "babel lib --out-dir dist"
+  },
+  "keywords": [
+    "react-native",
+    "timeline",
+    "schedule",
+    "notification"
+  ],
+  "author": "Tadeu Valentt (https://github.com/t4deu)",
+  "license": "MIT",
+  "bugs": {
+    "url":
+      "https://github.com/t4deu/react-native-timeline/issues"
+  },
+  "homepage": "https://github.com/t4deu/react-native-timeline",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/t4deu/react-native-timeline.git"
+  },
+  "peerDependencies": {
+    "react-native": ">= 0.4"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.3.15",
+    "@storybook/addon-links": "^3.3.15",
+    "@storybook/addons": "^3.3.15",
+    "@storybook/react-native": "^3.3.15",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "flow-bin": "0.56.0",
+    "husky": "^0.14.3",
+    "jest-expo": "25.0.0",
+    "prettier-eslint": "^8.8.1",
+    "prop-types": "^15.6.1",
+    "react-devtools": "^3.2.0",
+    "react-dom": "16.2.0",
+    "react-native-scripts": "1.11.1",
+    "react-test-renderer": "16.2.0"
+  }
+}
